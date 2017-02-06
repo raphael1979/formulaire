@@ -2,10 +2,67 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Formulairre</title>
+	<title>Formulaire</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+	<h1>Formulaire d'inscription</h1>
+	<form action="" method="post">
+		<div>
+			<label for="name">Nom : </label>
+			<input type="text" id="name" name="nom"/>
+		</div>
+
+		<div>
+			<label for="name">Prénom : </label>
+			<input type="text" id="name" name="prenom"/>
+		</div>
+		<div>
+			<label for="name">Login : </label>
+			<input type="text" id="name" name="login"/>
+		</div>
+		<div>
+			<label for="sexe">Quel est votre sexe ? </label><br>
+			<input type="radio" name="subject" value="masculin"> Masculin
+			<input type="radio" name="subject" value="feminin"> Féminin
+		</div>
+		<div>
+			<label for="name">Mot de passe : </label>
+			<input type="password" name="password" maxlength="8"><br>8 caractères maximal
+		</div>
+		<div>
+			<label for="date">Date de naissance : </label>
+			<input type="date" name="date">
+		</div>
+		<div>
+			<label for="ville">ville : </label>
+			<input type="name" name="ville">
+		</div>
+		<div>
+			<label for="mail">Mail : </label>
+			<input type="text" name="mail">
+		</div>
+		<div>
+			<label for="url">URL : </label>
+			<input type="text" name="url">
+		</div>
+		<div>
+			<label for="interet">Vos centres d'interêts : </label>
+			<textarea rows="5" cols="50" name="interet"></textarea>Max 200 caract.
+		</div>
+		<div>
+			<label for="tel">Téléphone : </label>
+			<input type="tel" name="tel">
+		</div>
+		<div>
+			<label for="couleur">Votre couleur préféré : </label>
+			<input type="color" name="color"><br>
+			<label for="color">Nom ou numéro de couleur : </label>  
+			<input type="text" name="color">
+		</div>
+
+
+	</form>
 	
 </body>
 </html>
