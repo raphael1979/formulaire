@@ -13,3 +13,10 @@ form {
 form div + div {
     margin-top: 1em;
 }
+input:invalid {
+  border: 1px solid red;
+}
+
+input:valid {
+  border: 1px solid green;
+}
