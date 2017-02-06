@@ -1,0 +1,15 @@
+{
+	"nom":"",
+	"prénom" :"",
+	"Login" : "",
+	"sexe": "",
+	"password": "",
+	"date_de_naissance":"",
+	"ville":"",
+	"mail":"",
+	"url":"",
+	"hobbys":"",
+	"tel":"",
+	"couleur":""
+}
+
