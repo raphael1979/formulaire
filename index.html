@@ -23,8 +23,8 @@
 		</div>
 		<div>
 			<label for="sexe">Quel est votre sexe ? </label><br>
-			<input type="radio" name="subject" value="masculin" required> Masculin
-			<input type="radio" name="subject" value="feminin" required> Féminin
+			<input type="radio" name="sexe" value="masculin" required> Masculin
+			<input type="radio" name="sexe" value="feminin" required> Féminin
 		</div>
 		<div>
 			<label for="name">Mot de passe : </label>
@@ -32,7 +32,7 @@
 		</div>
 		<div>
 			<label for="date">Date de naissance : </label>
-			<input type="date" name="date" required>
+			<input type="date" name="date_de_naissance" required>
 		</div>
 		<div>
 			<label for="ville">ville : </label>
@@ -40,15 +40,15 @@
 		</div>
 		<div>
 			<label for="mail">Mail : </label>
-			<input type="email" name="email" required>
+			<input type="mail" name="mail" id="mail" required>
 		</div>
 		<div>
 			<label for="url">URL : </label>
 			<input type="text" name="url" required>
 		</div>
 		<div>
-			<label for="interet">Vos centres d'interêts : </label>
-			<textarea rows="5" cols="50" name="interet" required></textarea>Max 200 caract.
+			<label for="interet">Vos Hobbys : </label>
+			<textarea rows="5" cols="50" name="hobbys" required></textarea>Max 200 caract.
 		</div>
 		<div>
 			<label for="tel">Téléphone : </label>
@@ -56,13 +56,12 @@
 		</div>
 		<div>
 			<label for="couleur">Votre couleur préféré : </label>
-			<input type="color" name="color"><br>
+			<input type="color" name="couleur" list="li"><br>
 			<label for="color">Nom ou numéro de couleur : </label>  
-			<input type="text" name="color" required>
+			<input type="text" name="couleur" required>
 		</div>
-
-
 	</form>
-	
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>	
 </body>
 </html>
