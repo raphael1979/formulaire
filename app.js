@@ -1,4 +1,4 @@
-var email = document.getElementById("mail");
+var email = document.getElementById("email");
 
 email.addEventListener("keyup", function (event) {
   if(email.validity.typeMismatch) {

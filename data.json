@@ -1,4 +1,5 @@
 {
+	"id":"1",
 	"nom":"",
 	"prénom" :"",
 	"Login" : "",
@@ -12,4 +13,33 @@
 	"tel":"",
 	"couleur":""
 }
-
+{
+	"id":"2",
+	"nom":"",
+	"prénom" :"",
+	"Login" : "",
+	"sexe": "",
+	"password": "",
+	"date_de_naissance":"",
+	"ville":"",
+	"mail":"",
+	"url":"",
+	"hobbys":"",
+	"tel":"",
+	"couleur":""
+}
+{	
+	"id":"3",
+	"nom":"",
+	"prénom" :"",
+	"Login" : "",
+	"sexe": "",
+	"password": "",
+	"date_de_naissance":"",
+	"ville":"",
+	"mail":"",
+	"url":"",
+	"hobbys":"",
+	"tel":"",
+	"couleur":""
+}
