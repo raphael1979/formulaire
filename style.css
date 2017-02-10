@@ -11,7 +11,7 @@ form {
 }
 
 form div + div {
-    margin-top: 1em;
+  margin-top: 1em;
 }
 input:invalid {
   border: 1px solid red;
@@ -24,8 +24,8 @@ input:valid {
 	text-align: center;
 }
 label {
-    /* To make sure that all labels have the same size and are properly aligned */
-    display: inline-block;
-    width: 150px;
-    text-align: right;
+  /* To make sure that all labels have the same size and are properly aligned */
+  display: inline-block;
+  width: 150px;
+  text-align: right;
 }
