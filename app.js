@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	console.log('coucou')
 	var email = $('#email').val();
-	console.log(email);
+	//console.log(email);
 	function verifiermail(){
 		if ((email.indexOf("@")>=0)&&(email.indexOf(".")>=0)) {
 			return true 
