@@ -3,10 +3,7 @@
     	$("form").on("submit", function(event){
     		event.preventDefault();
     	});
-    	function amicale(){
-    		console.log("Salut");
-    	};
-    	amicale();
+    	var sexe;
     	function validatePhone(txtPhone) {
     		var a = $("#tel").val();
     		console.log(a);
@@ -32,13 +29,6 @@
     	});
     	$("input[type=password]").blur(function(){
     		var pwd = $(this).val();
-            //check taille passsword
-            if ( pwd.length < 8){
-            	$("#length").removeClass("valid").addClass("invalid");
-            }
-            else{
-            	$("#length").removeClass("invalid").addClass("valid");
-            }
             //check majuscule password
             if ( pwd.match(/[A-Z]/)) {
             	$("#capital").removeClass("invalid").addClass("valid");
@@ -62,12 +52,20 @@
 
             }
         });
+
+    	$(".sexe").click(function(){
+    		if ($("#feminin").is(':checked')) {
+    			sexe = "femme";
+    		} else if ($("#masculin").is(':checked')) {
+    			sexe = "homme";
+    		}
+    	});
+
     	var users = [];
     	$("form").submit(function(event){
     		var name = $("#name").val();
     		var firstName = $("#prenom").val();
     		var log = $("#login").val();
-    		var sexe = $("#sexe").val();
     		var date = $("#date").val();
     		var mail = $("#email").val();
     		var tel = $("#tel").val();
@@ -84,6 +82,7 @@
     			ville:ville,
     			color:color,
     			pass:pass,
+    			sexe:sexe,
     		}
     		users.push(obj);
     		console.log(users);
