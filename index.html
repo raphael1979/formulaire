@@ -29,6 +29,9 @@
 		<div>
 			<label for="password">Mot de passe : </label>
 			<input type="password" id="password" name="password" maxlength="8" required><br>8 caractères maximal
+			<ul>
+				<li id="capital" class="invalid"></li>
+			</ul>
 		</div>
 		<div>
 			<label for="date">Date de naissance : </label>
@@ -50,9 +53,10 @@
 			<label for="interet">Vos Hobbys : </label>
 			<textarea rows="5" cols="50" name="hobbys" required placeholder="Max 200 caractères"></textarea>
 		</div>
-		<div>
+		<div >
 			<label for="tel">Téléphone : </label>
-			<input type="tel" name="tel" required>
+			<input type="tel" name="tel" id="tel" required>
+			<span id="spnPhoneStatus"></span>
 		</div>
 		<div>
 			<label for="color">Votre couleur préféré ? </label>  
