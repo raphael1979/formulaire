@@ -29,3 +29,9 @@ label {
   width: 150px;
   text-align: right;
 }
+.invalid{
+  color:red;
+}
+.valid{
+  color: green
+}

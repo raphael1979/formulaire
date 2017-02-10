@@ -14,32 +14,34 @@
 		</div>
 
 		<div>
-			<label for="name">Prénom : </label>
-			<input type="text" id="name" name="prenom" required>
+			<label for="prenom">Prénom : </label>
+			<input type="text" id="prenom" name="prenom" required>
 		</div>
 		<div>
-			<label for="name">Login : </label>
-			<input type="text" id="name" name="login" required>
+			<label for="login">Login : </label>
+			<input type="text" id="login" name="login" required>
 		</div>
 		<div>
 			<label for="sexe">Quel est votre sexe ? </label><br>
-			<input type="radio" name="sexe" value="masculin" required> Masculin
-			<input type="radio" name="sexe" value="feminin" required> Féminin
+			<input type="radio" name="sexe" id="sexe" value="masculin" required> Masculin
+			<input type="radio" name="sexe" id="sexe" value="feminin" required> Féminin
 		</div>
 		<div>
 			<label for="password">Mot de passe : </label>
 			<input type="password" id="password" name="password" maxlength="8" required><br>8 caractères maximal
 			<ul>
-				<li id="capital" class="invalid"></li>
+				<li id="capital" class="invalid">Avec une lettre capitale</li>
+				<li id="number" class="invalid">Avec un chiffre</li>
+				<li id="special" class="invalid">Avec un caratère spécial</li>
 			</ul>
 		</div>
 		<div>
 			<label for="date">Date de naissance : </label>
-			<input type="date" name="date_de_naissance" required>
+			<input type="date" id="date" name="date_de_naissance" required>
 		</div>
 		<div>
 			<label for="ville">ville : </label>
-			<input type="name" name="ville" required>
+			<input type="name" id="ville" name="ville" required>
 		</div>
 		<div>
 			<label for="email">Mail : </label>
@@ -47,11 +49,11 @@
 		</div>
 		<div>
 			<label for="url">URL : </label>
-			<input type="url" name="url" required>
+			<input type="url" id="url" name="url" required>
 		</div>
 		<div>
-			<label for="interet">Vos Hobbys : </label>
-			<textarea rows="5" cols="50" name="hobbys" required placeholder="Max 200 caractères"></textarea>
+			<label for="hobbys">Vos Hobbys : </label>
+			<textarea rows="5" cols="50" id="hobbys" name="hobbys" required placeholder="Max 200 caractères"></textarea>
 		</div>
 		<div >
 			<label for="tel">Téléphone : </label>
@@ -60,7 +62,7 @@
 		</div>
 		<div>
 			<label for="color">Votre couleur préféré ? </label>  
-			<input type="text" name="couleur" required>
+			<input type="text" id="color" name="couleur" required>
 		</div>
 		<div class="button">
 			<input type="submit" value="envoyer" id="envoyer">

@@ -64,15 +64,16 @@
         });
     	var users = [];
     	$("form").submit(function(event){
-    		var name = $("#nom").val();
+    		var name = $("#name").val();
     		var firstName = $("#prenom").val();
     		var log = $("#login").val();
-    		var date = $("#naissance").val();
-    		var mail = $("#mail").val();
-    		var tel = $("#textPhone").val();
+    		var sexe = $("#sexe").val();
+    		var date = $("#date").val();
+    		var mail = $("#email").val();
+    		var tel = $("#tel").val();
     		var ville = $("#ville").val();
     		var color = $("#color").val();
-    		var pass = $("#pwd").val();
+    		var pass = $("#password").val();
     		var obj = {
     			name:name,
     			firstName:firstName,
@@ -91,37 +92,8 @@
     		var parseUser = JSON.parse(user);
     		for (var i=0 ; i<parseUser.length; i++){
     			console.log(parseUser[i]);
-    			//$("#app").append(parseUser[i] + "<br />");
+    			$("#app").append(parseUser[i] + "<br />");
     		}
     	});
-        // $.fn.formBackUp = function(){
-        //     if(!localStorage){
-        //         return false;
-        //     }
-        //     var forms = this;
-        //     var datas = {};
-        //     var ls = false;
-        //     datas.href = window.location.href;
 
-        //     if(localStorage["formBackUp"]){
-        //         ls = JSON.parse(localStorage["formBackUp"]);
-        //         if(ls.href == datas.href){
-        //             for(var id in ls){
-        //                 if(id != "href"){
-        //                     $("#" + id).val(ls[id]);
-        //                     datas[id] = ls[id];
-        //                 }
-        //             }
-        //         }
-        //     }
-        //     forms.find ("input.text").keyup(function(e){
-        //         datas[$(this).attr("id")] = $(this).val();
-        //         localStorage.setItem("formBackUp" , JSON.stringify(datas));
-        //     });
-        //     forms.submit(function(e){
-        //         localStorage.removeItem("formBackUp");
-        //     })
-        //     console.log(datas)
-        // }
-        // $("form").formBackUp();
     });	
